@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Introduksjon</title>
+
+  <style>
+ 
+
+  </style>
+
+</head>
+<body>
+
+  <h1>Introduksjon</h1>
+  <img src="https://quickbutik.imgix.net/30617v/products/6465188c6fe45.jpeg?auto=format,compression&fit=max&max-w=960&max-h=960&dpr=1?auto=format" alt="bilde av meg" style="width: 30%; height: 30%;">
+  <p>Mitt navn er Kim H. Thoresen <br>
+  Jeg er en hyggelig mann på 32år, som hater å prate om meg selv
+  </p>
+ <h2>Hobbyer:</h2>
+ <ul>
+  <li>Reprasjon og nybygg av PC</li>
+  <li>Gaming</li>
+  <li>Restaurere Bolig</li>
+  <li>Restaurere Kjøretøy</li>
+  <li>Reise</li>
+ </ul> 
+
+ <h1>
+  <button id="genNew">Bytt Farge Her!</button>
+  <span id="color"></span>
+</h1>
+
+ <script>
+
+const setBg = () => {
+  const randomColor = 
+  Math.floor(Math.random()*10000).toString(16);
+  document.body.style.backgroundColor 
+  = "#" + randomColor;
+}
+
+genNew.addEventListener("click", setBg);
+setBg();
+
+ </script>
+</body>
+</html>
